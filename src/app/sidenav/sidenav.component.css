@@ -1,0 +1,46 @@
+mat-divider {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 224, 224, 0.527);
+}
+
+
+.name {
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.operation {
+    font-weight: normal;
+    margin-left: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    background-color: #616363;
+    
+}
+
+mat-expansion-panel{
+  background-color: #616363;
+}
+
+mat-icon{
+  color: white;
+}
+
+a{
+  margin-top: 0px;
+}

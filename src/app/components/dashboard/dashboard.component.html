@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand navbar-light bg-light" >
+    <button mat-icon-button matTooltip="Application Menu" (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <img src="../assets/images/hps-removebg-preview.png" class="hpsimage">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link active" (click)="goHome()" routerLinkActive="active">Home</a>
+        <a class="nav-item nav-link" routerLink="/changepassword">Change Password</a>
+    </div>
+    <span style="flex: 1 1 auto;"></span>
+    <div>
+        <button mat-icon-button matTooltip="Notifications">
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="My Account" >
+            <mat-icon>account_circle</mat-icon>
+        </button>
+    </div>
+    <div>
+        <button mat-icon-button matTooltip="Logout">
+            <a class="nav-item nav-link" (click)="authservice.SignOut()">
+                <mat-icon>logout</mat-icon>
+            </a>
+        </button>
+    </div>
+</nav>
+
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+        <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8" >
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

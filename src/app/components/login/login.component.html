@@ -1,0 +1,64 @@
+<!--<div class="displayTable">
+    <div class="displayTableCell">
+  
+      <div class="displayBlock">
+        <h3>Firebase Log In</h3>
+        <div class="formGroup">
+          <input type="text" class="formControl" placeholder="Username" #userName required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="password" class="formControl" placeholder="Password" #userPassword required>
+        </div>-->
+  
+        <!-- Calling Login In Api from AuthService 
+        <div class="formGroup">
+          <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+        </div>
+  
+          
+  
+        <div class="forgotPassword">
+          <span routerLink="/forgot-password">Forgot Password?</span>
+        </div>
+      </div>
+  
+      <div class="redirectToLogin">
+        <span>Don't have an account?<span class="redirect" routerLink="/register-user"> Sign Up</span></span>
+      </div>
+  
+    </div>
+</div>-->
+
+
+
+<div class="col-md-6 offset-md-3 mt-5">
+  <img src="../assets/images/hps-removebg-preview.png" class="hpsimage">
+  <div class="card">
+      <h4 class="card-header">Login</h4>
+      <div class="card-body">
+          <form >
+            <div class="formGroup">
+              <label>Email<span style="color:red;">*</span></label>
+              <input type="text" class="form-control" placeholder="Username" #userName required>
+            </div>
+            <br>
+            <div class="formGroup">
+              <label>Password<span style="color:red;">*</span></label>
+              <input type="password" class="form-control" placeholder="Password" #userPassword required>
+            </div>
+            <br>
+            <div class="formGroup">
+              <input type="button" class="btn btn-primary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+            </div>
+            <br>
+            <div class="forgotPassword">
+              <span id="txt" routerLink="/forgot-password">Forgot Password?</span>
+            </div>
+            <div class="redirectToLogin">
+              <span id="txt">Don't have an account?<span class="redirect" routerLink="/register-user"> Sign Up</span></span>
+            </div>
+          </form>
+      </div>
+  </div>
+</div>

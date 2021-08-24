@@ -1,0 +1,17 @@
+.txt{
+    color: black;
+    text-align: center;
+}
+
+#bt{
+    color: rgb(78, 201, 29);
+}
+
+#bt2{
+    color: rgb(235, 53, 53);
+}
+
+button{
+    margin:10px;
+    margin-top: 50px;
+}
